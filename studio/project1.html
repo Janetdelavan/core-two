@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=             , initial-scale=1.0">
+    <link rel="stylesheet" href="../style1.css">
+    <title>Project 1</title>
+    <div style="background-image: url('images/Untitled_Artwork3.jpg');"></div>
+    <style type="text/css">
+        body
+        {
+            padding: 0;
+            margin: 0;
+            background: white;
+        }
+        h1
+        {
+            font-size: 4em;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'arial';
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>WANT TO ATTEND PARSONS SCHOOL OF DESIGN?</h1>
+</body>
+<head>
+    <title>Button Hover Effects</title>
+    <link rel="stylesheet" type="text/css" href="../style1.css"
+</head>
+<body>
+    <a href="https://docs.google.com/document/d/14q_9KBbH7y7qgRYNHCvuTGp6_QHd8d7qTg53PWUNJak/edit?usp=sharing" class="btn"><span>LET'S GET STARTED</span></a>
+    <script>
+        const btn = document.querySelector('.btn');
+        btn.onmousemove = function(e){
+            const x = e.pageX - btn.offsetLeft;
+            const y = e.pageY - btn.offsetTop;
+
+            btn.style.setProperty('--x', x + 'px');
+            btn.style.setProperty('--y', y + 'px');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*
+{
+    margin-top: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+.btn
+{
+    position: relative;
+    display: inline-flex;
+    padding: 10px 30px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+.btn span
+{
+    position: relative;
+    z-index: 1;
+}
+.btn::before
+{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: #e82e25;
+    transition: width 0.5s, height 0.5s;
+}
+.btn:hover::before
+{
+    width: 300px;
+    height: 300px;
+}
+body {
+    background-image: url("images/Untitled_Artwork3.jpg");
+    background-size: 1450px;
+  }
