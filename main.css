@@ -71,6 +71,7 @@ header {
 
 .short-bio {
   grid-column: 1 / 3;
+  line-height: 27px;
 }
 
 .lead-img {
