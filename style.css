@@ -105,31 +105,41 @@ p:first-child:first-letter {
     box-shadow: 7px 7px #6fa092;
 }
 blockquote::before {
-    content: "\201C";
-    font-family: 'IBM PlexSans';
-    font-size: 60px;
+    content: open-quote;
     color:#d67a66;
-    position:absolute;
-    left: 50px;
-    top: 8px;
+    font-size: 4em;
+     line-height: 0.1em;
+     margin-right: 0.25em;
+     vertical-align: -0.4em;
 }
 blockquote {
-    display: block;
-    text-align: center;
-    position:relative;
-    background-color: #f7e2da;
-    border-left: 3px solid #d67a66;
-    margin:1.5em 50px;
-    padding: 30px;
+    letter-spacing: -0.015rem;
+  background: #f7e2da;
+  border-left: 3px solid #d67a66;
+  margin: 2em 3em;
+  padding: 2rem;
+  border-radius: 0 4px 4px 0;
 }
 .flex-container {
     display:flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    background-color:#f7e2da;
-    border: 3px solid #d67a66;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: 2rem auto 0 auto;
 }
+.flex-container div {
+    width: 30%;
+    min-width:200px;
+    height: 100px;
+    background-color:#f7e2da;
+    border: 2px soild #d67a66;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-container div:nth-of-type(2) {
+    margin: 2rem;
+  }
 footer::after {
     list-style-type: author;
     color:#705c68;
