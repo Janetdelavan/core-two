@@ -131,7 +131,9 @@ blockquote {
     min-width:200px;
     height: 100px;
     background-color:#f7e2da;
-    border: 2px soild #d67a66;
+    border-style: solid;
+    border-color: #d67a66;
+    border-width: 2px;
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
