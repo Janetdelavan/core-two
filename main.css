@@ -5,7 +5,7 @@ html {
   font-size: 1em;
   line-height: 40px;
   padding:1.5rem;
-  background-color: white;
+  background-color: #f4f0e9;
 }
 
 ul {
@@ -43,7 +43,7 @@ a:active {
 }
 
 main {
-  width: 70vw;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -53,7 +53,6 @@ main {
   grid-auto-rows:min-content;
   grid-gap:2rem;
   padding-bottom:2rem;
-  border-bottom:1px solid #ffffff;
 }
 
 header {
