@@ -1,83 +1,80 @@
+@font-face {
+    font-family: 'Recoleta';
+    src: url(fonts/Recoleta-Regularcopy.otf) format('otf');
+    font-style: normal;
+    font-weight: regular;
+    font-display: swap;
+}
 html {
-    background-color: #fcf5ee;
+    background-color: fcf9f5;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
+
 html,
 body {
-    font-family: freight-big-pro, serif;
+    font-family: 'Recoleta', normal;
     font-style: normal;
-    font-weight: 300;
-    font-size: 1.3rem;
+    font-weight: regular;
+    font-size: 1.2rem;
+    hanging-punctuation: first last;
 }
 h1 {
-    font-family: freight-big-pro, serif;
+    font-family: 'Recoleta', normal;
     font-style: normal;
-    font-weight: 300;
+    font-weight: regular;
     color: #474746;
     margin: 5px 0px 0px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1;
     padding-bottom: 3px;
+    hanging-punctuation: first last;
 }
 h2 {
-    font-family: freight-big-pro, serif;
+    font-family: 'Recoleta', normal;
     font-style: normal;
-    font-weight: 300;
+    font-weight: regular;
     color: #474746;
     margin: 0px 0px 50px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    hanging-punctuation: first last;
 }
 h3 {
-    font-family: freight-big-pro, serif;
+    font-family: 'Recoleta', normal;
     font-style: normal;
-    font-weight: 300;
+    font-weight: regular;
     color: #474746;
     margin: 10px 0px 10px;
+    hanging-punctuation: first last;
 }
-h4 {
-    font-family: freight-big-pro, serif;
-    font-style: normal;
-    font-weight: 300;
+
+.halignright {
+	float: right;
 }
-.test {
-    background-image: linear-gradient(60deg, #acacac, #161616);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.halignleft {
+    float:left;
 }
-.cramped {
-    line-height: .2;
-    text-align:justify;
+.alignright {
+    text-align: right;
 }
-.intro {
-    line-height: .5;
+.fineleading {
+    line-height: .6;
 }
-.intro2 {
-    line-height: .7;
-    
-}
-.spaced {
-    line-height: 1.5;
-    font-weight: bold;
-}
-footer::after {
+footer {
     list-style-type: author;
     color:#705c68;
     content: '\2191';
     padding: 5px;
+    text-align: center;
+    font-size: 1rem;
 }
 .container {
     width: 100%;
     max-width: 20rem;
     padding: 0 2rem;
     margin: 3rem auto;
-    /*background-image: linear-gradient(60deg, #7c7c7c, #161616);
+    background-image:  radial-gradient(circle at 50% 30%, #eecab7, #d0b79e, #b1a489, #939276, #777f67, #5b6c58, #435a4b, #2c473f, #000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
