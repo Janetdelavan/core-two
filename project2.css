@@ -5,11 +5,13 @@
     font-weight: regular;
     font-display: swap;
 }
+
 html {
     background-color: fcf9f5;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -19,6 +21,7 @@ body {
     font-weight: regular;
     font-size: 1.2rem;
     hanging-punctuation: first last;
+    max-width: 30rem;
 }
 h1 {
     font-family: 'Recoleta', normal;
@@ -71,7 +74,7 @@ footer {
 }
 .container {
     width: 100%;
-    max-width: 20rem;
+    max-width: 30rem;
     padding: 0 2rem;
     margin: 3rem auto;
     background-image:  radial-gradient(circle at 50% 30%, #eecab7, #d0b79e, #b1a489, #939276, #777f67, #5b6c58, #435a4b, #2c473f, #000);
