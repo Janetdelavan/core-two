@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Page Project</title>
     <link rel="stylesheet" href="../week4.css" />
+    <script src="../week4.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,11 @@
             <div class="story">
                 <h2>Classic Ford Broncos Building Company Designs Births New 1976 "Dr. Quinn"</h3>
                 <div class="subhead">CFB never fails with their creations, especially when designing this 1976 into a Ford Racing 5.0L Coyote Drivetrain with a whiskey spice custom diamond stitch interior.   </div>
-                <img src="../images/Passenger_Interior-1920x900.jpg" width="100" class="special"/>
+                <div class="scontainer">
+                    <a class="prev" onclick="previous()"><<</a>
+                        <img id="slide" src="https://qg1pwcso2l-flywheel.netdna-ssl.com/wp-content/uploads/2019/05/passenger_interior-2.jpg" width="100" height="500px"/>
+                    <a class="next" onclick="next()">>></a>
+                </div>
             </div>
         </article>
 </body>
