@@ -7,11 +7,11 @@ var images= [
     "https://qg1pwcso2l-flywheel.netdna-ssl.com/wp-content/uploads/2019/05/driver_rear_34-1.jpg",
     "https://qg1pwcso2l-flywheel.netdna-ssl.com/wp-content/uploads/2019/05/front-2.jpg"]
 
-    var num=0;//num is a variable to hold the current image
+    var num=0;
 
 function next()
 {
-  var slider =document.getElementById('slider');
+  var slider =document.getElementById('slide');
   num++;
   if(num>=images.length)
   {
@@ -22,7 +22,7 @@ function next()
 
 function previous()
 {
-  var slider =document.getElementById('slider');
+  var slider =document.getElementById('slide');
   num--;
   if(num<0)
   {
