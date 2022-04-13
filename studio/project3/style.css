@@ -1,0 +1,26 @@
+html {
+    margin: 5px;
+    background-color: #eae4d5;
+}
+.shelf {
+    position:fixed;
+    display: flex;
+    bottom:0px;
+    width: 70%;
+    align-items: center;
+}
+.row {
+    display:flex;
+    margin: 10px;
+
+}
+.column {
+    position:fixed;
+    display:block;
+    bottom: 55px;;
+    width: 100%;
+    flex:auto;
+}
+.img{
+    margin: 0;
+}
