@@ -2,25 +2,41 @@ html {
     margin: 5px;
     background-color: #eae4d5;
 }
-.shelf {
-    position:fixed;
-    display: flex;
-    bottom:0px;
-    width: 70%;
-    align-items: center;
+footer {
+    text-align: center;
 }
-.row {
-    display:flex;
-    margin: 10px;
-
+div {
+    float:left;
+}
+.janet{
+    position: fixed;
+    margin-bottom: 3%;
+    bottom: 0;
+    width: 100%;
+    flex: auto;
+    text-align: center;
 }
 .column {
     position:fixed;
-    display:block;
-    bottom: 55px;;
-    width: 100%;
+    margin-bottom: 3%;
+    bottom: 0;
+    width: 85%;
     flex:auto;
+    text-align: center;
+    left: 7%;
+    right: 7%;
 }
-.img{
-    margin: 0;
+.shelf {
+    position:fixed;
+    display:block;
+    bottom: 0px;;
+    width: 60%;
+    flex:auto;
+    text-align: center;
+}
+.a{
+    position: fixed;
+    text-align: center;
+    left: 20%;
+    right: 17%;
 }
