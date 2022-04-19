@@ -6,6 +6,7 @@
     <title>janet's inspiration</title>
     <link rel="stylesheet" href="../project3/style.css" />
     <script src ="../project3/script.js"></script>
+    <embed src="../project3/items/yt5s.com - Museum (Entrance) - Animal Crossing_ New Horizons Music Extended (128 kbps).mp3" loop="true" autostart="true" hidden="true"></embed>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
             <div class="frame7"><img src="../project3/viewall/gainingexperience.png" style="width:100%"></div>
             <div class="frame6"><img src="../project3/viewall/aliceneeluntitled.png" style="width:100%"></div>
 
-            <button class="trigger"><img src="../project3/viewall/blue.png" style="width:100%"></button>
+            <button class="trigger" id="trigger"><img src="../project3/viewall/blue.png" style="width:100%"></button>
 
             <div class="frame14"><img src="../project3/viewall/stilllife.png" style="width:100%"></div>
             <div class="frame9"><img src="../project3/viewall/stamp.png" style="width:100%"></div>
@@ -62,7 +63,7 @@
     </div>
     </nav>
 
-    <div class="modal" id="modal">
+    <div class="modal" id="modal" onclick = "toggleModal()">
         <div class="modal-content">
             <img class="details" src="../project3/details/IMG_3086.jpg">
             <h1>Hello, this is the popup</h1>

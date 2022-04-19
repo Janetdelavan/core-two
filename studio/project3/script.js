@@ -1,21 +1,21 @@
-const modal = document.querySelector(".modal");
+const mod = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
 
 function toggleModal() {
     var modal = document.getElementById('modal');
     modal.style.opacity = "1";
     modal.style.visibility = "visible";
-    modal.style.transform = "scale(1.0)";
+    modal.style.transform = "scale(1.0)"
 }
 
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
+// function windowOnClick(event) {
+//     if (event.target === modal) {
+//         toggleModal();
+//     }
+// }
 
-trigger.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+// trigger.addEventListener("click", toggleModal);
+// window.addEventListener("click", windowOnClick);
 
 /*console.log('Hi');
 
