@@ -241,7 +241,8 @@ img.mystuffb:hover {
 .details {
   width: 40%;
 }
-/* frame5 */
+
+/* frame5 EVENT */
 
 .trigger {
     width: 70%;
@@ -269,6 +270,7 @@ img.mystuffb:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color:#eae4d5;
   padding: 1rem 1.5rem;
   width: 70%;
   border-radius: 0.5rem;
@@ -282,7 +284,6 @@ img.mystuffb:hover {
   border-radius: 0.25rem;
   background-color: lightgray;
 }
-
 .show-modal {
   opacity: 1;
   visibility: visible;
@@ -296,6 +297,8 @@ img.mystuffb:hover {
   animation-name: swing;
   animation-duration: 1s;
 }
+
+/* Frame5 EVENT END */
 
 .frame14 {
     width: 50%;
