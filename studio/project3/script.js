@@ -1,4 +1,22 @@
-console.log('Hi');
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
+/*console.log('Hi');
 
 fetch('https://api.airtable.com/v0/appHeSkxwjOR0q5KH/fauvism',{
     headers: {
@@ -21,5 +39,5 @@ fetch('https://api.airtable.com/v0/appHeSkxwjOR0q5KH/fauvism',{
                 </div>
                 `;
         });
-    });
-    
+    }); 
+*/
