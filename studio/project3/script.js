@@ -1,9 +1,11 @@
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
-const closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
-    modal.classList.toggle("show-modal");
+    var modal = document.getElementById('modal');
+    modal.style.opacity = "1";
+    modal.style.visibility = "visible";
+    modal.style.transform = "scale(1.0)";
 }
 
 function windowOnClick(event) {
@@ -13,7 +15,6 @@ function windowOnClick(event) {
 }
 
 trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
 /*console.log('Hi');
