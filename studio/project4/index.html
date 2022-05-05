@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny For Your Thoughts</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+       <img class="title" src="images/pennyforurthots.png"
+    </header>
+    <div>
+        <img class="jar" src="images/jar.png"
+    </div>
+
+    <div onKeyPress="return myFunction(event)">
+        <form id="form01" onsubmit="return false;" >
+            <input type="text" onclick="myFunction(0)" autofocus/>
+        </form>
+    </div>
+    <script>
+        function myFunction(e) {
+           if((e && e.keyCode == 13) || e == 0) {
+             document.forms.form01.submit();
+             document.forms.form01.fname.value = "";
+           }
+        }
+        </script>
+    
+</body>
+</html>
