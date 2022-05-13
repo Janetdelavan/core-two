@@ -6,27 +6,46 @@
     <title>Penny For Your Thoughts</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
-       <img class="title" src="images/pennyforurthots.png"
-    </header>
     <div>
-        <img class="jar" src="images/jar.png"
+        <img class="line" src="images/jarline.png">
     </div>
 
-    <div onKeyPress="return myFunction(event)">
-        <form id="form01" onsubmit="return false;" >
-            <input type="text" onclick="myFunction(0)" autofocus/>
-        </form>
+    <div>
+        <img class="penny" id="drop" src="images/penny.png">
     </div>
+
+    <div>
+        <img class="jar" src="images/jar.png">
+    </div>
+
+    <div>
+        <input type="text" onkeypress="myFunction()" autofocus
+            placeholder="what's on your mind?" />
+    </div>
+
     <script>
-        function myFunction(e) {
-           if((e && e.keyCode == 13) || e == 0) {
-             document.forms.form01.submit();
-             document.forms.form01.fname.value = "";
-           }
-        }
-        </script>
-    
+        function myFunction() {
+            if (event.keyCode == 13) {
+                event.target.value = '';
+                var penny = document.getElementById('drop');
+                penny.style.top = '100px' }
+            }
+    </script>
+
 </body>
+
+<!-- <div onclick="myFunction()">
+   <img class="popup" id="pennypopup" src ="images/pennypopup.png"> 
+   <script>
+       function myFunction() {
+    var popup = document.getElementById("pennypopup");
+    popup.style.opacity = "0";
+    popup.style.transition = "0.5s";
+       }
+   </script>
+</div> -->
+
+    
 </html>

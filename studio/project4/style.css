@@ -6,38 +6,79 @@ h1 {
     text-align: center;
     font-size: 1.5rem;
 }
-.title {
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+body {
+    margin-left: 41.5%;
+    margin-top: 10%;
+}
+.line {
+    position: absolute;
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 320px;
 }
 .jar {
-    width: 23%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
+    width: 250px;
 }
-.textbox {
-    margin-top: 2%;
-}
-input {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 3%;
-    box-sizing: border-box;
-    background-color: antiquewhite;
-    border: none;
-}
+
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
     outline: none
+}
+
+  .penny {
+    position: absolute;
+    width: 100px;
+    margin-left: 80px;
+    margin-top: 370px;
+    top: -500px;
+    opacity: 1;
+    animation: drop .5s linear forwards;
+    transition: .5s;
+  }
+  
+  @keyframes drop { 
+    0% {transform: translateY(-500px) scaleY(0.7); opacity: 0;}
+    5% {opacity: .7;}
+    50% {transform: translateY(0px) scaleY(1); opacity: 1;}
+    65% {transform: translateY(-17px) scaleY(.9); opacity: 1;}
+    75% {transform: translateY(-22px) scaleY(.9); opacity: 1;}
+    100% {transform: translateY(0px) scaleY(1); opacity: 1;}
+  }
+
+ input {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 35px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+}
+
+.popup {
+    width: 600px;
+    position: absolute;
+    margin-left: -180px;
+    margin-top: -515px;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+    opacity: 0;
+    transition: 2s;
+}
+@-webkit-keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity:0 ;}
 }

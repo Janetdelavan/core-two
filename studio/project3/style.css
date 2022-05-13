@@ -57,7 +57,7 @@ img.clear{
 img.clear:hover {
     transform: translateX(-10%) translateY(-15%) rotatez(10deg);
 }
-.viewall {
+.viewall { 
    display: grid;
     position: absolute;
     grid-template-columns: repeat(8, 1fr);
@@ -261,10 +261,11 @@ img.mystuffb:hover {
   height: 100%;
   background-color: rgba(16, 1, 20, 0.5);
   opacity: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
+
 .modal-content {
   position: absolute;
   top: 50%;
@@ -273,7 +274,9 @@ img.mystuffb:hover {
   padding: 1rem 1.5rem;
   width: 70%;
   border-radius: 0.5rem;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
+
 .trigger:hover {
     -webkit-transform-origin: top center;
   transform-origin: top center;

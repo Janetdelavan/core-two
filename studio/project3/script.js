@@ -1,11 +1,23 @@
 const mod = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
 
+// function toggleModal() {
+//     var modal = document.getElementById('modal');
+//     modal.style.opacity = modal.style.opacity === '1' ? '' : '1';
+//     modal.style.transform = modal.style.transform === 'scale(1.0)' ? '' : 'scale(1.0)';
+// }
+
 function toggleModal() {
     var modal = document.getElementById('modal');
-    modal.style.opacity = "1";
-    modal.style.visibility = "visible";
-    modal.style.transform = "scale(1.0)"
+    modal.style.opacity = '1';
+    modal.style.transform = 'scale(1.0)';
+}
+
+function clickPainting() {
+    var painting = document.getElementById('painting');
+    painting.style.opacity = "0";
+    var modal = document.getElementById('modal');
+    modal.style.backgroundColor = "rgba(16, 1, 20, 0)";
 }
 
 // function windowOnClick(event) {
@@ -33,7 +45,7 @@ fetch('https://api.airtable.com/v0/appHeSkxwjOR0q5KH/fauvism',{
         const container = document.querySelector ('.container');
         data.records.forEach(album => {
             console.log(album);
-            container.innerHTML += `
+            container.innerHTML += ` 
                 <div class="album">
                     <h3> ${album.fields.artist}</h3>
                     <h5> ${album.fields.title}</h5>
